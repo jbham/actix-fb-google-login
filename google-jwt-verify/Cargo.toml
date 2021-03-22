@@ -1,0 +1,30 @@
+[package]
+name = "google-jwt-verify"
+version = "0.3.0"
+authors = ["Nathan Fox <fuchsnj@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/fuchsnj/google-jwt-verify"
+license = "MIT/Apache-2.0"
+description = """
+A client to verify Google JSON web tokens
+"""
+edition = "2018"
+
+[features]
+default = ["blocking"]
+async = ["async-trait"]
+blocking = ["reqwest/blocking"]
+
+[dependencies]
+async-trait = {version = "0.1.42", optional = true}
+openssl = "0.10.28"
+base64 = "0.11.0"
+serde = "1.0.104"
+serde_json = "1.0.48"
+serde_derive = "1.0.104"
+reqwest = {version="0.10.4"}
+headers = "0.3.1"
+
+
+# [dev-dependencies]
+tokio = {version = "0.2", features = ["macros", "sync"]}
