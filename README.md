@@ -1,4 +1,4 @@
-## I created this project while learning Rust. Project shows how to handle Facebook and Google token verification in Rust using Actix-Web. Hope this helps somebody out there.
+#### I created this project while learning Rust. Project shows how to handle Facebook and Google token verification in Rust using Actix-Web. Hope this helps somebody out there.
 
 ## How does it work?
 * All magic happens in this [file](https://github.com/jbham/actix-fb-google-login/blob/master/src/auth.rs) on this [line](https://github.com/jbham/actix-fb-google-login/blob/74a99d73199d59f1a1c16efcad57057a56f75f80/src/auth.rs#L73)
