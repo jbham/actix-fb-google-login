@@ -6,6 +6,7 @@
 * Under the hood, it uses ```google-jwt-verify``` library to verify Google Sign-in token and uses ```reqwest``` to verify Facebook token. Once verified, it stores the token details in Redis with auto expiration time based on the token expiration time.
 
 ## How to use?
+* Make sure to add Google client ID, Facebook details in .env file. Once .env file is filled, this data should seamlessly flow to the rest of the information. 
 * User would authenticate using Google Sign in or Facebook Login in the browser.
   * Browser would submit either google or facebook token in Authorization header of the HTTP request
   * Actix will verify the token and proceed depending on whether token is valid/invalid. If invalid, returns 401 error. If valid, it proceeds with rest of the steps.
